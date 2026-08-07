@@ -42,6 +42,8 @@ document.head.appendChild(style);
 
 let lastScroll = 0;
 const navbar = document.querySelector('.navbar');
+const hero = document.querySelector('.hero');
+const heroBg = document.querySelector('.hero-bg-car');
 
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
@@ -51,6 +53,11 @@ window.addEventListener('scroll', () => {
         navbar.style.transform = 'translateY(0)';
     }
     lastScroll = currentScroll;
+
+    if (heroBg && hero) {
+        const progress = Math.min(1, currentScroll / hero.offsetHeight);
+        heroBg.style.opacity = 0.35 * (1 - progress);
+    }
 });
 
 navbar.style.transition = 'transform 0.3s ease';

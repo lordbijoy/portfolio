@@ -638,6 +638,7 @@ body {
 }
 
 /* Mobile Responsive */
+/* Mobile Responsive */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -688,17 +689,29 @@ body {
 
     .hero-bg-car {
         top: auto;
-        height: 42vh;
+        height: 35vh;
     }
 
     .hero-bg-car img {
-    object-fit: contain;
-    object-position: center;
-}
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center center;
+    }
 
     .hero-name {
         font-size: 3rem;
     }
+
+    .section {
+        padding: 3rem 1.5rem;
+    }
+
+    .contact-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
     .section {
         padding: 3rem 1.5rem;

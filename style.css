@@ -581,6 +581,8 @@ body {
     border-radius: 10px;
     border: 1px solid var(--border);
     transition: all 0.3s;
+    text-decoration: none;
+    color: inherit;
 }
 
 .contact-card:hover {
@@ -665,4 +667,49 @@ body {
         flex-direction: column;
         align-items: center;
     }
+}
+.cert-link-card {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    cursor: pointer;
+}
+
+.cert-link-card:hover {
+    border-color: var(--accent);
+}
+
+.cert-link-card:hover h4 {
+    color: var(--accent);
+}
+
+.achievement-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.achievement-link,
+.achievement-link:link,
+.achievement-link:visited,
+.achievement-link:hover,
+.achievement-link:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.achievement-link h4,
+.achievement-link p {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+.achievement-link:hover .achievement-card {
+    border-color: var(--accent);
+}
+
+.achievement-link:hover h4 {
+    color: var(--accent) !important;
 }

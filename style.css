@@ -692,9 +692,9 @@ body {
     }
 
     .hero-bg-car img {
-        object-fit: cover;
-        object-position: center;
-    }
+    object-fit: contain;
+    object-position: center;
+}
 
     .hero-name {
         font-size: 3rem;

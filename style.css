@@ -638,7 +638,6 @@ body {
 }
 
 /* Mobile Responsive */
-/* Mobile Responsive */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -689,29 +688,17 @@ body {
 
     .hero-bg-car {
         top: auto;
-        height: 35vh;
+        height: 42vh;
     }
 
     .hero-bg-car img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        object-position: center center;
+        object-fit: cover;
+        object-position: center;
     }
 
     .hero-name {
         font-size: 3rem;
     }
-
-    .section {
-        padding: 3rem 1.5rem;
-    }
-
-    .contact-cards {
-        flex-direction: column;
-        align-items: center;
-    }
-}
 
     .section {
         padding: 3rem 1.5rem;
@@ -764,6 +751,34 @@ body {
     border-color: var(--accent);
 }
 
+.achievement-link:hover h4 {
+    color: var(--accent) !important;
+}
+
+/* Remove hyperlink styling from certificate & achievement links */
+.cert-link-card,
+.cert-link-card:link,
+.cert-link-card:visited,
+.cert-link-card:hover,
+.cert-link-card:active,
+.achievement-link,
+.achievement-link:link,
+.achievement-link:visited,
+.achievement-link:hover,
+.achievement-link:active {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+.cert-link-card h4,
+.cert-link-card p,
+.achievement-link h4,
+.achievement-link p {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+.cert-link-card:hover h4,
 .achievement-link:hover h4 {
     color: var(--accent) !important;
 }
